@@ -16,14 +16,14 @@
       rel="stylesheet">
   </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#about" class="skip-link">Skip to main content</a>
 <!-- Start Header -->
 <header class="site-header">
-  <a href="index.html" class="brand">HALA</a>
-  <nav class="main-nav">
+  <a href="#" class="brand">HALA</a>
+  <nav class="main-nav" aria-label="Main navigation">
     <ul>
-      <li><a href="index.html" >Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="index.html" class="active" aria-label="Home">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
     </ul>
   </nav>
@@ -31,10 +31,10 @@
 <!-- End Header -->
  
 <!-- Start Main Section -->
-  <main id="about-me">
+  <main id="about" >
     <section class="about-section">
       <div class="hero">
-        <h3 class="title">About Me</h3>
+        <h1 class="title">About Me</h1>
            <img src="images/about-hala.jpg" alt="Hala working on a design project">
 
         <div class="about-me" id="about-me">
@@ -45,14 +45,14 @@
         creativity and purpose.I believe every design tells a story — one that connects, inspires, and leaves a lasting impression.
         </p>
         </div>
-        <a href="portfolio.html" class="main-btn">See My Projects</a>
+   <!-- <a href="portfolio.html" class="main-btn" aria-label="See All Projects">See All Projects</a> -->
       </div>
     </section>
   </main>
 
   <!-- Start our-skills -->
   <section class="our-skills" id="our-skills">
-    <h3 class="title">Our Skills</h3>
+    <h2 class="title">Our Skills</h2>
     <div class="content">
       <!-- <img src="images/skills.png" alt=""> -->
       <div class="skills">
@@ -97,15 +97,18 @@
   <!-- End our-skills -->
    
 <!-- Star Footer -->
-<footer class="footer-title">
-<p>© 2025 <span>Hala Elsadig</span> | Designed with passion 💖</p>
+<footer class="footer-title" role="contentinfo">
+  <p><strong>©</strong> 2025 <span>Hala Elsadig</span> | Designed with passion 💖</p>
   <div class="social-icons">
-    <a href="mailto:hala15.elsadig@email.com" class="facebook"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100004813780516" class="facebook"><i
+    <a href="mailto:hala15.elsadig@email.com" class="email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100004813780516" class="facebook" aria-label="Facebook"><i
         class="fab fa-facebook-f"></i></a>
-    <a href="https://www.behance.net/halaelsadig" class="behance"><i class="fab fa-behance"></i></a>
-    <a href="https://www.instagram.com/hlo_osh/" class="instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/hala-elsadig-012880b0 " class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.behance.net/halaelsadig" class="behance" aria-label="Behance"><i
+        class="fab fa-behance"></i></a>
+    <a href="https://www.instagram.com/hlo_osh/" class="instagram" aria-label="Instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/hala-elsadig-012880b0 " class="linkedin" aria-label="linked-in"><i
+        class="fab fa-linkedin-in"></i></a>
   </div>
 </footer>
 <!-- Star Footer -->

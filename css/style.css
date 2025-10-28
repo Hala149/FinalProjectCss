@@ -57,6 +57,7 @@ Skip Link (Accessibility)
     z-index: 100;
 }
 
+
 /* -------------------------------
 Header & Navigation
 --------------------------------*/
@@ -132,12 +133,12 @@ section{
     background-attachment: fixed;
     position: relative;
 }
-.main-sec h2{
+.main-sec h1{
     color:var(--text-color) ;
-    font-size: .9em;
+    font-size: 16px;
     font-weight: 500;
 }
-.main-sec h2 span{
+.main-sec h1 span{
     display: inline-block;
     margin-top: 10px;
     color: var(--main-color);
@@ -145,9 +146,17 @@ section{
     font-weight: 600;
     text-transform: uppercase;
 }
+.main-sec h2 {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .main-sec h3{
     color: var(--text-color);
-    font-size: 1.2em;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -253,7 +262,7 @@ section{
     padding: 1em;
 }
 .pro-category{
-    font-size: 0.6em;
+    font-size: 14px;
     color: var(--text-color);
 }
 .pro-title{
@@ -320,7 +329,6 @@ section{
 /* <!-- Start our-skills --> */
 .our-skills{
     padding: 50px 60px 50px 60px;
-    /* background-image: linear-gradient(rgba(155 178 182 / 33%), rgba(155 178 182 / 33%)), url("../images/main-background2.jpg");       */
       background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -426,7 +434,6 @@ section{
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* صورتين في الصف */
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -439,7 +446,6 @@ section{
     cursor: pointer;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform: scale(0.95);
-    /* صور أصغر افتراضي */
 }
 
 .tile img {
@@ -515,13 +521,14 @@ input {
 }
 .container h2{
     margin-bottom: 30px;
+    color: var(--main-color);
 }
 .top-content h3 {
     height: 100%;
     background-color: #9bb2b6;
     line-height: 60px;
     padding: 0 50px;
-    color: white;
+    color: var(--main-color);
 }
 
 label {
@@ -530,7 +537,7 @@ label {
     margin: 0 20px;
     line-height: 60px;
     font-size: 15px;
-    color: grey;
+    color: var(--text-color);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -734,7 +741,7 @@ label:hover {
 --------------------------------*/
 footer {
     background-color:#9bb2b6;
-    color: var(--text-color);
+    color: var(--main-color);
     text-align: center;
     padding: 1em ;
     display: flex;
@@ -746,11 +753,12 @@ footer {
     font-weight: 600;
 }
 .footer-title span{
-    color:var(--main-color);
+    color:#172d32;
 }
 .footer-title .social-icons a{
     font-size: 1.3em;
     padding: 0 12px 0 0;
+    color: var(--main-color);
 }
 /* -------------------------------
    Responsive
