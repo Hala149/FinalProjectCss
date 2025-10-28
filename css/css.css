@@ -1,0 +1,249 @@
+/* -------------------------------
+   Global Styles
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+}
+
+/* -------------------------------
+   Skip Link (Accessibility)
+--------------------------------*/
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #ff007f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: top 0.3s ease;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.skip-link:focus {
+    top: 10px;
+    z-index: 100;
+}
+
+/* -------------------------------
+   Header & Navigation
+--------------------------------*/
+header {
+    background-color: #111;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #ff007f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff007f;
+}
+
+/* -------------------------------
+   Hero Section
+--------------------------------*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    /* background: linear-gradient(135deg, #ff007f, #0077ff); */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero a {
+    background: white;
+    color: #ff007f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    background: #111;
+    color: white;
+}
+
+/* -------------------------------
+   About Section
+--------------------------------*/
+.about {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h3 {
+    color: #ff007f;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------
+   Portfolio Section
+--------------------------------*/
+.portfolio {
+    padding: 4rem 2rem;
+    background: #fafafa;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 280px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    transition: 0.4s ease;
+}
+
+.gallery img:hover {
+    border-color: #ff007f;
+    transform: scale(1.05);
+}
+
+/* Every second image has different border radius */
+.gallery img:nth-child(even) {
+    border-radius: 50px 10px 50px 10px;
+}
+
+/* -------------------------------
+   Contact Section
+--------------------------------*/
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #ff007f;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+}
+
+.contact a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------------
+   Footer
+--------------------------------*/
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+/* -------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
